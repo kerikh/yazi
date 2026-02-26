@@ -81,6 +81,11 @@ pub fn compose(
 			#[cfg(unix)]
 			b"host_name" => Utils::host_name(lua)?,
 
+			// Ollama (local LLM)
+			b"ollama_generate" => Utils::ollama_generate(lua)?,
+			b"ollama_chat" => Utils::ollama_chat(lua)?,
+			b"ollama_embed" => Utils::ollama_embed(lua)?,
+
 			_ => return Ok(Value::Nil),
 		}
 		.into_lua(lua)

@@ -24,6 +24,7 @@ yazi-dds      = { path = "../yazi-dds", version = "26.2.2" }
 yazi-emulator = { path = "../yazi-emulator", version = "26.2.2" }
 yazi-fs       = { path = "../yazi-fs", version = "26.2.2" }
 yazi-macro    = { path = "../yazi-macro", version = "26.2.2" }
+yazi-ollama   = { path = "../yazi-ollama", version = "26.2.2" }
 yazi-parser   = { path = "../yazi-parser", version = "26.2.2" }
 yazi-proxy    = { path = "../yazi-proxy", version = "26.2.2" }
 yazi-shared   = { path = "../yazi-shared", version = "26.2.2" }

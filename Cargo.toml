@@ -50,6 +50,7 @@ parking_lot         = "0.12.5"
 paste               = "1.0.15"
 percent-encoding    = "2.3.2"
 rand                = { version = "0.9.2", default-features = false, features = [ "os_rng", "small_rng", "std" ] }
+reqwest             = { version = "0.13.2", default-features = false, features = [ "json", "default-tls" ] }
 ratatui             = { version = "0.30.0", features = [ "serde", "unstable-rendered-line-info", "unstable-widget-ref" ] }
 regex               = "1.12.3"
 russh               = { version = "0.57.0", default-features = false, features = [ "ring", "rsa" ] }

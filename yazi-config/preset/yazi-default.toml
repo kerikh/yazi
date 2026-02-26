@@ -242,3 +242,10 @@ sort_by      	 = "none"
 sort_sensitive = false
 sort_reverse 	 = false
 sort_translit  = false
+
+
+[ai]
+ollama_enabled     = false
+ollama_url         = "http://localhost:11434"
+ollama_model       = "llama3.2"
+ollama_embed_model = "nomic-embed-text"

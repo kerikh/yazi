@@ -3,7 +3,7 @@ use serde::Deserialize;
 use yazi_codegen::DeserializeOver1;
 use yazi_fs::{Xdg, ok_or_not_found};
 
-use crate::{mgr, open, opener, plugin, popup, preview, tasks, which};
+use crate::{ai, mgr, open, opener, plugin, popup, preview, tasks, which};
 
 #[derive(Deserialize, DeserializeOver1)]
 pub struct Yazi {
@@ -17,6 +17,7 @@ pub struct Yazi {
 	pub confirm: popup::Confirm,
 	pub pick:    popup::Pick,
 	pub which:   which::Which,
+	pub ai:      ai::Ai,
 }
 
 impl Yazi {
@@ -38,6 +39,7 @@ impl Yazi {
 			confirm: self.confirm,
 			pick:    self.pick,
 			which:   self.which,
+			ai:      self.ai.reshape()?,
 		})
 	}
 }
