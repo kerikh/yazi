@@ -1,0 +1,19 @@
+[package]
+name        = "yazi-ollama"
+version     = "26.2.2"
+edition     = "2024"
+license     = "MIT"
+authors     = [ "sxyazi <sxyazi@gmail.com>" ]
+description = "Yazi Ollama local LLM client"
+homepage    = "https://yazi-rs.github.io"
+repository  = "https://github.com/sxyazi/yazi"
+
+[lints]
+workspace = true
+
+[dependencies]
+anyhow      = { workspace = true }
+reqwest     = { workspace = true }
+serde       = { workspace = true }
+serde_json  = { workspace = true }
+tokio       = { workspace = true }
